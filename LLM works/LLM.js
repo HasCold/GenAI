@@ -1,8 +1,9 @@
 import { GoogleGenAI } from "@google/genai";
 import readlineSync from "readline-sync";
+import { gemini_api_key } from "../shared/constant";
 
 // The client gets the API key from the environment variable `GEMINI_API_KEY`.
-const ai = new GoogleGenAI({apiKey: "AIzaSyAUX6YF4bnXgdT-FDtqQn_VJkfqWjAU0fY"});
+const ai = new GoogleGenAI({apiKey: gemini_api_key});
 
 // sample for talking with AI
 // async function main() {
