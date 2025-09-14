@@ -14,6 +14,7 @@ const pinecone = new Pinecone({
 }); // basically this line will automatically grab your environment variables from .env file like PINECONE_API_KEY, PINECONE_ENVIRONMENT
 const pineconeIndex = pinecone.Index(process.env.PINECONE_INDEX_NAME);
 
+// So in this process we have to create an index only once like one time store the vectors of document in vector DB.
 const indexDcoument = async () => {
     // Phase 1: PDF or Document Loading
     const PDF_PATH = './dsa.pdf';
